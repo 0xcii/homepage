@@ -40,15 +40,18 @@ const App: React.FC<AppProps> = (props) => {
     { label: '首页', onClick: () => push('/') },
     // { label: 'Bots', onClick: () => push('/bots') }, 
     { label: '经典案例', onClick: () => push('/projects') },
+
     { label: '服务咨询', onClick: () => push('https://t.me/icefrog666') },
     { label: '关于我们', onClick: () => push('/CCDAO.pdf') },
     { label: 'Airdrops+', onClick: () => push('https://airdrops.plus') },
+
   ]
   const mobileMenuItems = [
     { label: '首页', onClick: () => push('/') },
     // { label: 'Profile', onClick: () => push('/profile') },
     // { label: 'Bots', onClick: () => push('/bots') },
     { label: '经典案例', onClick: () => push('/projects') },
+
     { label: '服务咨询', onClick: () => push('https://t.me/icefrog666') },
     { label: '关于我们', onClick: () => push('/CCDAO.pdf') },
     { label: 'Airdrops+', onClick: () => push('https://airdrops.plus') },
@@ -108,7 +111,7 @@ const App: React.FC<AppProps> = (props) => {
           }}
         />
       </Head>
-      <ThemeProvider>
+      {/* <ThemeProvider> */}
         <Web3ReactProvider getLibrary={getLibrary}>
           <Navigation
             menu={menuItems}
@@ -119,7 +122,7 @@ const App: React.FC<AppProps> = (props) => {
           />
           <Component {...pageProps} />
         </Web3ReactProvider>
-      </ThemeProvider>
+      {/* </ThemeProvider> */}
     </>
   )
 }
