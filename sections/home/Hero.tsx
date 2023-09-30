@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
   const scrollToBottom = (): void => {
     const w = window.open('about:blank')
     // https://t.me/RobbieSon
-    w.location.href = "https://t.me/icefrog666"
+    w.location.href = "https://t.me/madaodev"
     // const bottomEle = document.getElementById('metaverse')
     // if (bottomEle) bottomEle.scrollIntoView({ behavior: 'smooth' })
   }
